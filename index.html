@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    <title>SBA307</title>
+</head>
+
+<body class="roboto">
+    <nav class="text-white p-4 grid grid-cols-3 items-center">
+        <a href="./index.html">
+            <h2 class="text-3xl rubik text-red-500 justify-self-start">
+                Stranger Archives
+            </h2>
+        </a>
+
+        <ul class="flex gap-6 justify-center justify-self-center">
+            <a href="./characters.html">
+                <li class="text-3xl rubik">Characters</li>
+            </a>
+            <a href="./episodes.html">
+                <li class="text-3xl rubik">Episodes</li>
+            </a>
+            <a href="./locations.html">
+                <li class="text-3xl rubik">Locations</li>
+            </a>
+            <a href="./seasons.html">
+                <li class="text-3xl rubik">Seasons</li>
+            </a>
+            <a href="./table.html">
+                <li class="text-3xl rubik">Table</li>
+            </a>
+        </ul>
+        <div class="text-white justify-self-end flex gap-6">
+            <button class="text-2xl font-bold bg-red-500 hover:bg-red-700 p-2 rounded-lg cursor-pointer"><a
+                    href="./signup.html">Signup</a></button>
+            <button class="text-2xl font-bold border border-red-500 hover:bg-red-500 p-2 rounded-lg cursor-pointer"><a
+                    href="./login.html">Login</a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline poster="">
+            <source src="public/st_bg_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="bg-image">
+        <img src="./public/bg-img.png" alt="" />
+    </div>
+    <div class="film"></div>
+    <div class="content">
+        <h1 class="text-9xl rubik text-red-500 tracking-[15px]">
+            Stranger Archives
+        </h1>
+
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------- Card Group -->
+    <!-- <div class="flex gap-12 mx-12 justify-evenly"> -->
+    <!-- ------------------------------------------------------------------------------------------- Character Card -->
+    <!-- <div
+            class="relative flex w-1/8 flex-col gap-4 items-start justify-start bg-[#1B5F7D]/40 rounded-lg p-4 text-white h-80 border-red-500 border-2 shadow-[0_30px_50px_#CA2B35]">
+            <div class="flex gap-4 w-full">
+                <h2 class="text-2xl rubik">Characters</h2>
+                <img class="absolute -right-10 -top-10 rounded-full bg-black w-30 h-35 ml-auto"
+                    src="./public/character-img.jpg" />
+            </div>
+
+            <h3 class="text-xl text-gray-500">View a List of characters/Actors</h3>
+            <button id="character"
+                class="mt-auto p-2 rounded-lg bg-red-500/80 hover:bg-red-600/60 w-full text-2xl">View</button>
+        </div> -->
+
+    <!-- ------------------------------------------------------------------------------------------- Episode Card -->
+    <!-- <div
+            class="relative flex w-1/8 flex-col gap-4 items-start justify-start bg-[#1B5F7D]/40 rounded-lg p-4 text-white h-80 border-red-500 border-2 shadow-[0_30px_50px_#CA2B35] hover:shadow-[0_30px_50px_#201D56]">
+            <div class="flex gap-4 w-full">
+                <h2 class="text-2xl rubik">Episodes</h2>
+                <img class="absolute -right-10 -top-10 rounded-full bg-black w-30 h-35 ml-auto"
+                    src="./public/character-img.jpg" />
+            </div>
+
+            <h3 class="text-xl text-gray-500">View a List of Episodes</h3>
+            <button id="episodes"
+                class="mt-auto p-2 rounded-lg bg-red-500/80 hover:bg-red-600/60 w-full text-2xl">View</button>
+        </div> -->
+
+    <!-- ------------------------------------------------------------------------------------------- Locations Card -->
+    <!-- <div
+            class="relative flex w-1/8 flex-col gap-4 items-start justify-start bg-[#1B5F7D]/40 rounded-lg p-4 text-white h-80 border-red-500 border-2 shadow-[0_30px_50px_#CA2B35]">
+            <div class="flex gap-4 w-full">
+                <h2 class="text-2xl rubik">Locations</h2>
+                <img class="absolute -right-10 -top-10 rounded-full bg-black w-30 h-35 ml-auto"
+                    src="./public/character-img.jpg" />
+            </div>
+
+            <h3 class="text-xl text-gray-500">View a List of Locations</h3>
+            <button id='locations'
+                class="mt-auto p-2 rounded-lg bg-red-500/80 hover:bg-red-600/60 w-full text-2xl">View</button>
+        </div> -->
+
+    <!-- ------------------------------------------------------------------------------------------- Seasons Card -->
+    <!-- <div
+            class="relative flex w-1/8 flex-col gap-4 items-start justify-start bg-[#1B5F7D]/40 rounded-lg p-4 text-white h-80 border-red-500 border-2 shadow-[0_30px_50px_#CA2B35]">
+            <div class="flex gap-4 w-full">
+                <h2 class="text-2xl rubik">Seasons</h2>
+                <img class="absolute -right-10 -top-10 rounded-full bg-black w-30 h-35 ml-auto"
+                    src="./public/character-img.jpg" />
+            </div>
+
+            <h3 class="text-xl text-gray-500">View a List of Seasons</h3>
+            <button id='seasons'
+                class="mt-auto p-2 rounded-lg bg-red-500/80 hover:bg-red-600/60 w-full text-2xl">View</button>
+        </div>
+    </div> -->
+
+    <!-- ------------------------------------------------------------------------------------------- API DATA -->
+    <div class="mt-24 mx-12 text-white">
+        <!-- <div id='card-list' class="grid grid-cols-4 gap-4">
+
+        </div>
+    </div> -->
+        <script src="./script.js"></script>
+</body>
+
+</html>

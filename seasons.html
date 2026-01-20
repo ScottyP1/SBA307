@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <title>Seasons</title>
+</head>
+
+<body class="roboto" data-page="seasons">
+    <nav class="text-white p-4 grid grid-cols-3 items-center">
+        <a href="./index.html">
+            <h2 class="text-3xl rubik text-red-500 justify-self-start">
+                Stranger Archives
+            </h2>
+        </a>
+
+        <ul class="flex gap-6 justify-center justify-self-center">
+            <a href="./characters.html">
+                <li class="text-3xl rubik">Characters</li>
+            </a>
+            <a href="./episodes.html">
+                <li class="text-3xl rubik">Episodes</li>
+            </a>
+            <a href="./locations.html">
+                <li class="text-3xl rubik">Locations</li>
+            </a>
+            <a href="./seasons.html">
+                <li class="text-3xl rubik">Seasons</li>
+            </a>
+            <a href="./table.html">
+                <li class="text-3xl rubik">Table</li>
+            </a>
+        </ul>
+        <div class="text-white justify-self-end flex gap-6">
+            <button class="text-2xl font-bold bg-red-500 hover:bg-red-700 p-2 rounded-lg cursor-pointer"><a
+                    href="./signup.html">Signup</a></button>
+            <button class="text-2xl font-bold border border-red-500 hover:bg-red-500 p-2 rounded-lg cursor-pointer"><a
+                    href="./login.html">Login</a>
+            </button>
+        </div>
+    </nav>
+    <div class="mt-24 mx-12 text-white">
+        <div id='card-list' class="grid grid-cols-4 gap-4">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
